@@ -76,3 +76,7 @@ a button{
    font-weight: bold;
     font-size: large;
 }
+.close:hover
+{
+    background-color: #984dbe;
+}
