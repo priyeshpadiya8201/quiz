@@ -15,7 +15,7 @@ body {
 
 .html_quiz-container {
     background-color: #56246f;
-    width: 60%;
+    width: 30%;
     height: 300px;
     align-items: center;
     margin-top: 10%;
@@ -36,7 +36,7 @@ ul li {
 }
 
 #submit {
-    width: 100%;
+    width: 30%;
     padding: 20px;
     background-color: #9E4784;
     border: none;

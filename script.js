@@ -76,7 +76,9 @@ const htmlquizData = [{
     c: "<li>",
     d: "<list>",
     correct: "a",
+   
 },
+
 ];
 
 const quiz = document.getElementById("quiz");
@@ -97,6 +99,7 @@ const getSelected = () => {
     answerElements.forEach((answerElement) => {
         if (answerElement.checked) {
             answer = answerElement.id;
+
         }
     });
     return answer;
@@ -109,6 +112,7 @@ const loadQuiz = () => {
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
+
 };
 loadQuiz();
 submitButton.addEventListener("click", () => {
@@ -118,7 +122,7 @@ submitButton.addEventListener("click", () => {
         currentQuiz++;
         if (currentQuiz < htmlquizData.length) loadQuiz();
         else {
-            quiz.innerHTML = ` <center style="margin-top:20%; color:white"><h2>You answered ${score}/${htmlquizData.length} questions correctly</h2> 
+            quiz.innerHTML = ` <center style="margin-top:20%; color:white;"><h2>You answered ${score}/${htmlquizData.length} questions correctly</h2> 
                 <button onclick="history.go(0)" style="padding:10px;border: none;background-color:#020917;border:3px solid white;border-radius:10px;color:white; ">Play Again</button> </center>`
            
         }

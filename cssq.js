@@ -120,7 +120,7 @@ submitButton.addEventListener("click", () => {
         currentQuiz++;
         if (currentQuiz < htmlquizData.length) loadQuiz();
         else {
-            quiz.innerHTML = ` <center style="margin-top:20%;"><h2>You answered ${score}/${htmlquizData.length} questions correctly</h2> 
+            quiz.innerHTML = ` <center style="margin-top:20%; color:white;"><h2>You answered ${score}/${htmlquizData.length} questions correctly</h2> 
             <button onclick="history.go(0)" style="padding:10px;border: none;background-color:#020917;border:3px solid white;border-radius:10px;color:white; ">Play Again</button> </center>`
            
         }
