@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <div class="back_btn">
+        <button onclick="history.back()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>Back to Home
+        </button>
+    </div>
+    <div class="quiz-container" id="quiz">
+        <center>
+            <div class="quiz-header">
+
+                <h4 id="question">Question is loading...</h4>
+                <hr>
+                <ul>
+                    <li> <input type="radio" name="answer" id="a" class="answer" /> <label for="a"
+                            id="a_text">Options....</label> </li>
+                    <li> <input type="radio" name="answer" id="b" class="answer" /> <label for="b"
+                            id="b_text">Options....</label> </li>
+                    <li> <input type="radio" name="answer" id="c" class="answer" /> <label for="c"
+                            id="c_text">Options....</label> </li>
+                    <li> <input type="radio" name="answer" id="d" class="answer" /> <label for="d"
+                            id="d_text">Options....</label> </li>
+                </ul>
+            </div>
+            <button id="submit">Submit</button>
+        </center>
+    </div>
+    <script src="cssq.js"></script>
+</body>
+</html>

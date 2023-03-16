@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,400&family=Poppins&display=swap');
+body{
+   
+    background-color: #37306B;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+
+#html_quiz,#css_quiz,#js_quiz,#php_quiz{
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+   background-color: #9E4784;
+}
+#html_quiz:hover,#css_quiz:hover,#js_quiz:hover,#php_quiz:hover
+{
+    background-color: #984dbe;
+
+}
+#quiz_start_btn{
+    margin: 10px;
+    margin-top: 100%;
+    width: 200px;
+    height: 60px;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: #9E4784;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+#quiz_start_btn:hover{
+    background-color: #984dbe;
+}
+a button{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: #CBE4DE;
+}
+.chose_lan{
+    background-color:#66347F;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    width: 300px;
+    margin-top: 10%;
+   
+}
+
+.chose_lan_heading{
+    background-color:#66347F;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+   border-radius: 20px 20px 0px 0px ;
+    border: 1px solid rgb(121, 121, 121);
+    color: white;
+}
+.close
+{
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+   background-color: #9E4784;
+   color: white;
+   font-weight: bold;
+    font-size: large;
+}

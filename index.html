@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $(".chose_lan").hide();
+            $(".close").hide();
+
+            $("#quiz_start").click(function () {
+                $(".chose_lan").show(50);
+                $("#quiz_start").hide();
+                $(".close").show(50);
+            });
+
+            $(".close").click(function () {
+                $(".chose_lan").hide();
+                $(".close").hide();
+                $("#quiz_start").show();
+            });
+
+        });
+    </script>
+    <center>
+        <!-- Start button Section -->
+        <div id="quiz_start">
+            <button id="quiz_start_btn">Start Quiz</button>
+        </div>
+
+        <!-- Choose a Language for quiz -->
+        <div class="chose_lan">
+
+            <div class="chose_lan_heading">
+                <h3>Select a language for Quiz...</h3>
+            </div>
+            <a href="htmlq.html"><button id="html_quiz"> HTML</button></a><br>
+            <a href="cssq.html"><button id="css_quiz">CSS</button></a><br>
+            <a href="javascriptq.html"> <button id="js_quiz">JavaScript</button></a><br>
+
+        </div>
+
+        <button class="close">Close</button>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
