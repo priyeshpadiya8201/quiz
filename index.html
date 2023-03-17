@@ -5,37 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quizzzy</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #37306B;">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".chose_lan").hide();
-            $(".close").hide();
+            $(".close_btn").hide();
 
             $("#quiz_start").click(function () {
-                $(".chose_lan").show(50);
+                $(".chose_lan").show(100);
                 $("#quiz_start").hide();
-                $(".close").show(50);
+                $(".close_btn").show(100);
+                $(".close_btn").show(100);
+                $("#quiz_edit").hide();
+
             });
 
-            $(".close").click(function () {
+            $(".close_btn").click(function () {
                 $(".chose_lan").hide();
-                $(".close").hide();
+                $(".close_btn").hide();
                 $("#quiz_start").show();
             });
-
         });
+        // -------------------- Edit quiz form -------------------------------------
+//var form = document.querySelector("#register_form");
+//var input = form.querySelectorAll("INPUT");
+var addBtn = document.querySelector("#quiz_edit");
+var model= document.querySelector(".model");
+var closeBtn = document.querySelector(".close-icon")
+addBtn.onclick = function()
+{
+    model.classList.add("active");
+}
+closeBtn.addEventListener("click", ()=>
+{
+    model.classList.remove("active");
+    var i;
+    for(i=0;i<input.length;i++)
+    {
+        input[i].value = " ";
+    }
+})
     </script>
     <center>
-        <!-- Start button Section -->
-        <div id="quiz_start">
-            <button id="quiz_start_btn">Start Quiz</button>
+    <div class="row">
+        <div class="col-12" style="padding-right:100px;">
+            <img src="./logo.png" alt="logo">
+            <i><span class="heading1" style="color: white; padding-top:20px;font-size:80px;font-weight: bolder;"><u>Quizzzy</u></span></i>
         </div>
-
+    </div>  
+       
+      <!-- Start button Section -->
+       <div class="row"> 
+            <div class="col-6">
+            <div id="quiz_start">
+                <button id="quiz_start_btn">Start Quiz</button>
+            </div>
+            </div>
+            <div class="col-6">
+                <div id="quiz_edit">
+                    <button id="quiz_edit_btn">Add Quiz</button>
+                </div>    
+            </div>
+        </div>
         <!-- Choose a Language for quiz -->
         <div class="chose_lan">
 
@@ -45,10 +84,53 @@
             <a href="htmlq.html"><button id="html_quiz"> HTML</button></a><br>
             <a href="cssq.html"><button id="css_quiz">CSS</button></a><br>
             <a href="javascriptq.html"> <button id="js_quiz">JavaScript</button></a><br>
-
         </div>
+        <button class="close_btn">Close</button>
+        <!-- Edit Quiz -->
+        <div class="table_box">
+            <table  border="1px">
+                <tr>   
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Subject</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <!-- <td>hellow world</td>
+                    <td>hellow world</td>
+                    <td>hellow world</td>
+                    <td>hellow world</td>
+                    <td>hellow world</td> -->
 
-        <button class="close">Close</button>
+                </tr>
+            </table>
+            </div>      
+                <tbody id="table_data">
+
+                </tbody>
+                <form id="register_form">    
+                    <div class="model">
+                        <i class="fa fa-times-circle close-icon"></i>
+                <div class="table_box">
+                <div class="right_model">      
+                    <div class="input_box1" >
+                        <input type="text" id="question" name="que" placeholder="Enter Question"><br>
+                        <label for="options" style="color: black;"><b><u>Options</u></b></label><br>
+                        <input type="radio" id="method1" value="cod" name="payment"><input type="text" id="question" name="que" placeholder="Enter Option-1"><br>
+                        <label for="option1"></label><br>
+                        <input type="radio" id="method2" value="master" name="payment"><input type="text" id="question" name="que" placeholder="Enter Option-2"><br>
+                        <label for="option2"></label><br>
+                        <input type="radio" id="method3" value="visa" name="payment"><input type="text" id="question" name="que" placeholder="Enter Option-3"><br>
+                        <label for="option3"></label><br>
+                        <input type="radio" id="method4" value="pal"  name="payment"><input type="text" id="question" name="que" placeholder="Enter Option-4"><br>
+                        <label for="option4"></label>
+                        <button type="submit" id="submit_btn"> Submit </button>
+                    </div>         
+                    </div>
+            </div>      
+            </div>
+        
     </center>
     <script src="script.js"></script>
 </body>

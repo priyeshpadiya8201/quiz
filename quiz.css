@@ -80,3 +80,37 @@ ul li {
 {
     color: white;
 }
+@media (max-width:300px) 
+{
+    body {
+        background-color: #9E4784;
+        background-size: 100% 100%;
+    }
+
+    .quiz-container {
+        width: 90%;
+        height: 365px;
+        margin-top: 400% ;
+    }
+    .quiz-header h4 {
+        padding: 0px;
+    }
+    .back_btn {
+        position: absolute;
+        right: 100px;
+        bottom: 600px;
+        margin: 30px;
+        
+    }
+    .back_btn button {
+        background-color: #9E4784;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    .back_btn button:hover
+    {
+        background-color: #984dbe;
+    }
+}

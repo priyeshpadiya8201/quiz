@@ -25,8 +25,9 @@ body{
 
 }
 #quiz_start_btn{
-    margin: 10px;
-    margin-top: 100%;
+    /* margin: 10px; */
+    margin-top: 10%;
+    /* margin-left: 200px; */
     width: 200px;
     height: 60px;
     border: 5px solid white;
@@ -38,6 +39,23 @@ body{
     color: white;
 }
 #quiz_start_btn:hover{
+    background-color: #984dbe;
+}
+#quiz_edit_btn{
+   
+    margin-top: 10%;
+    /* margin-left: 100px; */
+    width: 200px;
+    height: 60px;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: #9E4784;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+#quiz_edit_btn:hover{
     background-color: #984dbe;
 }
 a button{
@@ -52,7 +70,7 @@ a button{
     padding: 10px;
     border: 2px solid white;
     width: 300px;
-    margin-top: 10%;
+    margin-top: -0.5%;
    
 }
 
@@ -64,7 +82,93 @@ a button{
     border: 1px solid rgb(121, 121, 121);
     color: white;
 }
-.close
+.close_btn
+{
+    background-color: #9E4784;
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 50px; 
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: large;
+}
+.close_btn:hover
+{
+    background-color: #984dbe;
+}
+/* Quiz form */
+.model
+{
+    width: 0%;
+    height: auto;
+    position: fixed;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    z-index: -1;
+    opacity: 0; 
+    transition: 100s infinite;
+    background-color:#66347F;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    width: 300px;
+    margin-top: 10%;
+}
+.model.active
+{
+    opacity: 1;
+    z-index: 1;
+    width: 70%;
+}
+/* score table  css*/
+.upper_box
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 30px;   
+}
+
+.table_box
+{
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    color: white;
+}
+.table_box table
+{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.table_box table tr th
+{
+    padding: 20px;
+    border-bottom: 3px solid #ccc;
+    font-size: 14px;
+}
+.table_box table tr td
+{
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    font-size: 13px;
+    
+    
+}
+.table_box table tr button
+{
+    border: none;
+    outline: none;
+    background-color: #4286F5;
+    padding: 5px;
+    margin: 0px 5px 5px;
+    width: 33%;
+}
+#submit_btn
 {
     margin: 10px;
     width: 200px;
@@ -73,10 +177,34 @@ a button{
     border-radius: 50px;
    background-color: #9E4784;
    color: white;
-   font-weight: bold;
-    font-size: large;
+   font-weight: bolder;
 }
-.close:hover
+#submit_btn:hover
 {
     background-color: #984dbe;
+   
+}
+@media (max-width:300px) {
+    body
+    {
+        background-color: #9E4784;
+        background-size: 100% 100%;
+        margin-top: 50%;
+    }
+
+    #quiz_start button {
+        cursor: pointer;
+    }
+    .chose_lan {
+        margin-top: -20%;
+    }
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .heading1
+    {
+        padding-left: 500px;
+    }
 }
