@@ -184,7 +184,7 @@ a button{
     background-color: #984dbe;
    
 }
-/* @media (max-width:300px) {
+@media (max-width:300px) {
     body
     {
         background-color: #9E4784;
@@ -207,4 +207,4 @@ a button{
     {
         padding-left: 500px;
     }
-} */
+}
