@@ -34,25 +34,8 @@
                 $("#quiz_start").show();
             });
         });
-        // -------------------- Edit quiz form -------------------------------------
-//var form = document.querySelector("#register_form");
-//var input = form.querySelectorAll("INPUT");
-var addBtn = document.querySelector("#quiz_edit");
-var model= document.querySelector(".model");
-var closeBtn = document.querySelector(".close-icon")
-addBtn.onclick = function()
-{
-    model.classList.add("active");
-}
-closeBtn.addEventListener("click", ()=>
-{
-    model.classList.remove("active");
-    var i;
-    for(i=0;i<input.length;i++)
-    {
-        input[i].value = " ";
-    }
-})
+         
+     
     </script>
     <center>
     <div class="row">
@@ -98,23 +81,27 @@ closeBtn.addEventListener("click", ()=>
                 </tr>
                 <tr>
                     <!-- <td>hellow world</td>
-                    <td>hellow world</td>
-                    <td>hellow world</td>
-                    <td>hellow world</td>
-                    <td>hellow world</td> -->
-
+                    <td>hello world</td>
+                    <td>hello world</td>
+                    <td>hello world</td>
+                    <td>hello world</td> -->
                 </tr>
-            </table>
-            </div>      
                 <tbody id="table_data">
 
                 </tbody>
+            </table>
+            </div>       
                 <form id="register_form">    
                     <div class="model">
                         <i class="fa fa-times-circle close-icon"></i>
                 <div class="table_box">
                 <div class="right_model">      
                     <div class="input_box1" >
+                        No:<input type="number" id="id_no" name="no">
+                        Name:<input type="text" id="u_name" name="name">
+                        E-mail:<input type="email" id="mail" name="E_mail"><br><br>
+                        Subject:<input type="text" name="sub" id = "subject"><br><br>
+
                         <input type="text" id="question" name="que" placeholder="Enter Question"><br>
                         <label for="options" style="color: black;"><b><u>Options</u></b></label><br>
                         <input type="radio" id="method1" value="cod" name="payment"><input type="text" id="question" name="que" placeholder="Enter Option-1"><br>
@@ -130,9 +117,9 @@ closeBtn.addEventListener("click", ()=>
                     </div>
             </div>      
             </div>
-        
     </center>
     <script src="script.js"></script>
+    <script src="editq.js"></script>
 </body>
 
 </html>

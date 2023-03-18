@@ -184,6 +184,15 @@ a button{
     background-color: #984dbe;
    
 }
+.model .close-icon 
+{
+    position: absolute;
+    right: -20px;
+    top: -25px;
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(175, 5, 5);
+}
 @media (max-width:300px) {
     body
     {
