@@ -27,6 +27,7 @@ var no = document.querySelector("#id_no");
 var nm = document.querySelector("#U_name");
 var mail =document.querySelector("#mail");
 var subject = document.querySelector("#subject");
+var form = document.querySelector("#register_form");
 
 
 

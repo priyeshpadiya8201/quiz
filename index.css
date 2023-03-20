@@ -184,14 +184,31 @@ a button{
     background-color: #984dbe;
    
 }
+#reset_btn
+{
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+   background-color: #9E4784;
+   color: white;
+   font-weight: bolder;
+}
+#reset_btn:hover
+{
+    background-color: #984dbe;
+   
+}
+
 .model .close-icon 
 {
     position: absolute;
     right: -20px;
-    top: -25px;
+    top: -29px;
     font-size: 30px;
     padding: 10px;
-    color: rgb(175, 5, 5);
+    color: rgb(255, 0, 0);
 }
 @media (max-width:300px) {
     body
